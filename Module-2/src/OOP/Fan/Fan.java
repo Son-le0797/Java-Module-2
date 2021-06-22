@@ -5,5 +5,5 @@ public class Fan {
     private final int MEDIUM = 2;
     private final int FAST = 3;
 
-    
+
 }
