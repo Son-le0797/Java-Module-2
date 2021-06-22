@@ -1,4 +1,4 @@
-package OOP;
+package OOP.Class2DAnd3D;
 
 import java.awt.geom.Point2D;
 
