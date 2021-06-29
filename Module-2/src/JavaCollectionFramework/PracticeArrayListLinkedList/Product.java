@@ -1,15 +1,25 @@
 package JavaCollectionFramework.PracticeArrayListLinkedList;
 
 public class Product {
+    private int id;
     private String productName;
     private double price;
 
     public Product() {
     }
 
-    public Product(String productName, double price) {
+    public Product(int id, String productName, double price) {
+        this.id = id;
         this.productName = productName;
         this.price = price;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getProductName() {
@@ -28,10 +38,12 @@ public class Product {
         this.price = price;
     }
 
+
     @Override
     public String toString() {
         return "Product{" +
-                "productName='" + productName + '\'' +
+                "id=" + id +
+                ", productName='" + productName + '\'' +
                 ", price=" + price +
                 '}';
     }
