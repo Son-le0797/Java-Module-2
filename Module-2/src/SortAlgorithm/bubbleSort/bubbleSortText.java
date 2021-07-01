@@ -1,8 +1,8 @@
-package SortAlgorithm;
+package SortAlgorithm.bubbleSort;
 
 import java.util.Scanner;
 
-import static SortAlgorithm.BubbleSort.bubbleSort;
+import static SortAlgorithm.bubbleSort.BubbleSort.bubbleSort;
 
 public class bubbleSortText {
     public static void main(String[] args) {
