@@ -16,9 +16,13 @@ public class ReverseElementClient {
         wStack.push(84);
         wStack.push(96);
 
+
+        System.out.println("Array list: ");
         for(int i = 0; i < wStack.size();i++){
             System.out.print(wStack.get(i)+"\t");
         }
+
+        
 
 
 

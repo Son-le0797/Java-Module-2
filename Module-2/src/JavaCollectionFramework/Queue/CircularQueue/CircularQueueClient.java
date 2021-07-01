@@ -23,6 +23,8 @@ public class CircularQueueClient {
 
         display(q);
 
+
+        System.out.print("\nAdd 7, 27");
         enQueue(q, 7);
         enQueue(q, 27);
 
