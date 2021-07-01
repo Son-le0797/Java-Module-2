@@ -2,34 +2,25 @@ package JavaCollectionFramework.Stack.ReverseStack;
 
 import JavaCollectionFramework.Stack.ReverseStack.ReverseElement;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Stack;
 
 public class ReverseElementClient {
     public static void main(String[] args) {
-        Stack<Integer> wStack = new Stack<>();
-        wStack.push(12);
-        wStack.push(24);
-        wStack.push(36);
-        wStack.push(48);
-        wStack.push(60);
-        wStack.push(72);
-        wStack.push(84);
-        wStack.push(96);
-
-
-        System.out.println("Array list: ");
-        for(int i = 0; i < wStack.size();i++){
-            System.out.print(wStack.get(i)+"\t");
+        int[] arr = {12,2,24,7,97,36,6,4};
+        String str = "Chuc mung nam moi!";
+        System.out.println("Array of number: ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + "\t");
         }
+        System.out.println("\nAfter reverse: ");
 
-        
+        System.out.println(Arrays.toString(ReverseElement.ReverseNumberByStack(arr)));
 
-
-
-//        for(int i = 0; i< element.size(); i++){
-//            System.out.print();
-//        }
-//
-//        System.out.println("Display the list: " + );
+        System.out.println("");
+        System.out.printf("String: %s",str);
+        System.out.print("\nAfter reverse: ");
+        System.out.println(ReverseElement.ReverseStringByStack(str));
     }
 }
