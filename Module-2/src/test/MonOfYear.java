@@ -1,5 +1,7 @@
 package test;
 
+import java.util.Scanner;
+
 public class MonOfYear {
     public static void main(String[] args) {
 //        String monthOfYear[] = new String[12];
@@ -21,6 +23,9 @@ public class MonOfYear {
 //        }
         monthOfYear(6);
 
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.println(s);
     }
 
     public static void monthOfYear(int m){
