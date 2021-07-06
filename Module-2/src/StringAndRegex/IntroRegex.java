@@ -30,11 +30,19 @@ public class IntroRegex {
 //        System.out.println("Java Java Java".replaceFirst("\\w", "wi"));
 
         Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        if(checkDoB(str)) {
+            System.out.println("true");
+        }
+        else
+            System.out.println("false");
 
-        int a = 123;
-        a = Integer.parseInt("123");
-        System.out.print(a);
+    }
 
-
+    public static boolean checkDoB(String dob){
+        String regex = "^[A-Z]+[a-zA-Z0-9._]{4,256}";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(dob);
+        return matcher.matches();
     }
 }
