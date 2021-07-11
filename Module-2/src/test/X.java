@@ -2,16 +2,21 @@ package test;
 
 public class X {
     public static void main(String[] args) {
-        try {
-            int x = 0;
-            int y = 5 / x;
-        }catch (ArithmeticException e) {
-            System.out.println("Arithmetic");
-        }catch (Exception ae) {
-            System.out.println("Exception");
+        Integer a = new Integer(2);
+        Integer b = new Integer(2);
+        if (a == b) {
+            System.out.println("true");
         }
-        System.out.println("finished");
+        else
+            System.out.println("false");;
     }
 
+}
+
+class Y {
+    public static void main(String[] args) {
+        int x = 3; int y = 7;
+        System.out.println(x + y);
+    }
 }
 

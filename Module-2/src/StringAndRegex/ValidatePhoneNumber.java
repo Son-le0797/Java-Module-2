@@ -5,9 +5,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidatePhoneNumber {
+//    static int a = 0;
+//
+//    public static void main(String[] args) {
+//
+//        System.out.println(a);
+//    }
 
     public static boolean checkPhoneNumber(String phoneNumber){
-        String regex = "\\w+@\\w+(\\.\\w+){1,2}";
+        String regex = "^\\(\\d{2}\\)-\\(0\\d{9}\\)$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(phoneNumber);
         return matcher.matches();
